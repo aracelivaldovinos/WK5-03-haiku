@@ -9,4 +9,8 @@ describe('Haiku', () => {
     const haiku = new Haiku("hello","good","bye")
     expect(haiku.secondString).toEqual("good")
   })
+  test("should recognize second string", () => {
+    const haiku = new Haiku("hello","good","bye")
+    expect(haiku.thirdString).toEqual("bye")
+  })
 })
