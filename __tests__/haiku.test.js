@@ -5,4 +5,8 @@ describe('Body', () => {
     const line = new Body("hello")
     expect(line.line).toEqual("hello")
   })
+  test('should split string', () => {
+    const words = new Body("hello my");
+    expect(words.checkSyllable()).toEqual(["hello", "my"]);
+  })
   })
