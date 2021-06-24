@@ -1,16 +1,8 @@
-import Haiku from './../src/haiku';
+import Body from './../src/haiku';
 
-describe('Haiku', () => {
+describe('Body', () => {
   test("should recognize first string", () => {
-    const haiku = new Haiku("hello","good","bye")
-    expect(haiku.firstString).toEqual("hello")
+    const line = new Body("hello")
+    expect(line.line).toEqual("hello")
   })
-  test("should recognize second string", () => {
-    const haiku = new Haiku("hello","good","bye")
-    expect(haiku.secondString).toEqual("good")
   })
-  test("should recognize second string", () => {
-    const haiku = new Haiku("hello","good","bye")
-    expect(haiku.thirdString).toEqual("bye")
-  })
-})

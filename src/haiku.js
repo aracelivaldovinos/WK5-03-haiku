@@ -1,5 +1,6 @@
-export default function Haiku(firstString, secondString, thirdString) {
-  this.firstString = firstString
-  this.secondString = secondString
-  this.thirdString = thirdString
+export default function Body (line) {
+  this.line = line;
 }
+
+
+
